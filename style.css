@@ -1,0 +1,351 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    
+}
+header{
+    background-color: black;
+}
+.container{
+    width: 80%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+.leftheader ul{
+    display: flex;
+    column-gap: 15px;
+}
+.leftheader ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+.leftheader ul li i{
+    margin-right: 5px;
+    color: red;
+}
+.leftheader ul li a:hover{
+    color: blue;
+}
+.rightheader{
+    display: flex;
+    column-gap: 15px;
+}
+.rightheader ul{
+    display: flex;
+    align-items: center;
+}
+.rightheader ul li a i{
+    color: red;
+    margin-right: 5px;
+}
+.rightheader button{
+    border: 0;
+    background-color: red;
+    color: white;
+    padding:5px 10px;
+    height: 100%;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s;
+    font-family: 'Lato', sans-serif;
+}
+.rightheader ul li a i:hover{
+    color: blue;
+}
+.rightheader button:hover{
+    background-color: blue;
+    transform: scale(1.2);
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1423592707957-3b212afa6733?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: top center;
+    position: relative;
+}
+main::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+nav{
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    
+}
+.container2{
+    background-color:transparent;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 3px;
+    
+}
+.navright ul{
+    display: flex;
+    list-style-type: none;
+    column-gap: 15px;
+}    
+.navright ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.main-main{
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.main-main h2{
+    font-size: 55px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.main-main h4{
+    font-size: 20px;
+    text-align: center;
+}
+.main-main button{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 30px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+.main-main button:hover{
+    background-color: blue;
+    border: 0;
+    color: white;
+}
+.devam{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    position: relative;
+}
+.about{
+    width: 50%;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 40px;
+}
+.about h2{
+    margin-bottom: 20px;
+    font-size: 29px;
+}
+.about p{
+    font-size: 19px;
+}
+.firat{
+    color: red;
+}
+.about-resim{
+    width: 50%;
+}
+.devam img{
+   width: 600px;
+   height: 450px;
+}
+.hizmetler{
+    background-color: #F1F3F4;
+    min-height: 600px;
+    padding: 30px;
+    font-family: 'Lato', sans-serif;
+}
+.hizmetler h1{
+    letter-spacing: 2px;
+    text-align: center;
+}
+.kutucuklar{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.kutu{
+    background-color: white;
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    transition: .3s;
+}
+
+.kutu img{
+    height: auto;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+.kutu:hover{
+    opacity: .5;
+    transform: scale(1.2);
+    transform: rotate(-15deg);
+}
+.ekib{
+    color: black;
+    min-height: 500px;
+    font-family: 'Lato', sans-serif;
+}
+.ekib h1 {
+    text-align: center;
+    padding: 20px;
+}
+.avukatlar{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    justify-content: space-between;
+}
+.avukat{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding:20px 20px;
+}
+.avukat img{
+    width: 300px;
+    height: 300px;
+    border: 5px solid white;
+    cursor: pointer;
+    transition: .5s;
+}
+.avukat img:hover{
+    opacity: .5;
+    transform: scale(.9);
+}
+.avukat h2{
+    margin-top:30px;
+}
+/* for desktop */
+.whatsapp_float {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+        font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+        z-index:100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.whatsapp-icon {
+	margin-top:16px;
+}
+/* for mobile */
+@media screen and (max-width: 767px){
+     .whatsapp-icon {
+	 margin-top:10px;
+     }
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+
+.wp-iletisim{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px auto;
+    background-color: #F1F3F4;
+    font-family: 'Lato', sans-serif;
+
+    
+}
+.google-map h1{
+    margin: 20px 0;
+    text-align: center;
+}
+.wp-iletisim .iletisim h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.wp-iletisim .iletisim ul{
+    text-align: center;
+}
+.wp-iletisim .iletisim ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 20px;
+}
+.son{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+.son h2{
+    font-size: 25px;
+    padding: 20px;
+}
+hr{
+    margin-bottom: 15px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
